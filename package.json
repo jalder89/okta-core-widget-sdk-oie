@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@okta/okta-signin-widget": "^7.19.1"
+  },
+  "name": "okta-core-widget-sdk-oie",
+  "version": "1.0.0",
+  "description": "A test package for working with Okta SIW and SDKs on OIE",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalder89/okta-core-widget-sdk-oie.git"
+  },
+  "keywords": [
+    "Okta",
+    "OIE",
+    "SDK",
+    "Sign-in",
+    "Widget"
+  ],
+  "author": "Jessica Alder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jalder89/okta-core-widget-sdk-oie/issues"
+  },
+  "homepage": "https://github.com/jalder89/okta-core-widget-sdk-oie#readme"
+}
