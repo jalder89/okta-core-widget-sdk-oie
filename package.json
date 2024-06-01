@@ -11,8 +11,8 @@
   "description": "A test package for working with Okta SIW and SDKs on OIE",
   "main": "app.js",
   "scripts": {
-    "frontend-test": "node ./src/frontend/server/server.js",
-    "frontend-start": "node ./src/frontend/server/server.js"
+    "frontend-test": "node ./src/frontend/server.js",
+    "frontend-start": "node ./src/frontend/server.js"
   },
   "repository": {
     "type": "git",

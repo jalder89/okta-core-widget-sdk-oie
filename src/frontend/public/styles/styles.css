@@ -15,6 +15,23 @@ body {
     z-index: 1;
 }
 
+.nav-tray > ul {
+    list-style: none;
+    padding-left: 10%;
+}
+
+.nav-tray li {
+    text-align: center;
+    padding: 5px 0px;
+    width: 150px;
+    height: 50px;
+
+}
+
+.nav-tray a {
+    padding: 20px;
+}
+
 .nav-tray.open {
     left: 0;
 }
@@ -97,4 +114,69 @@ body {
     width: 100%;
     height: auto;
     border-radius: 50%;
+}
+
+.profile-menu {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%) scale(0);
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    z-index: -1;
+}
+
+.profile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+.profile-menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-menu.open {
+    transform: translate(10%, -10%) scale(1);
+    opacity: 1;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-tray {
+        width: 125px;
+    }
+
+    .nav-tray li {
+        padding: 10px 0px;
+        height: 25px;
+        width: 100px;
+    }
+
+    .nav-tray a {
+        padding: 10px;
+    }
+
+    .banner > h1 {
+        font-size: 1.3em;
+    }
+
+    .content.nav-open {
+        margin-left: 150px;
+    }
+
+    .footer.nav-open {
+        margin-left: 125px;
+    }
 }
