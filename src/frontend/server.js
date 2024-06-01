@@ -5,6 +5,7 @@ import "dotenv/config";
 
 // Declarations and Initializations
 const app = new express();
+const PORT = process.env.PORT || 8080;
 
 // Get the directory name of the current module
 const __filename = fileURLToPath(import.meta.url);
@@ -18,5 +19,5 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', '/pages/index/index.html'))
 });
 
-app.listen(Number(process.env.PORT || 8080));
-console.log(`App listening on ${process.env.PORT || 8080}`);
+app.listen(Number(PORT));
+console.log(`App listening on ${PORT}`);
