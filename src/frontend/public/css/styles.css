@@ -77,6 +77,14 @@ body {
     margin-left: 250px
 }
 
+#okta-sign-in > .okta-sign-in-header.auth-header {
+    background-color: rgb(169, 35, 35) !important;
+}
+
+#okta-sign-in > .auth-content {
+    background-color: rgb(222, 214, 214) !important;
+}
+
 .footer {
     position: fixed;
     bottom: 0;

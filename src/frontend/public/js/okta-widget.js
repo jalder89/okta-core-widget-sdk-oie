@@ -4,7 +4,8 @@ const oktaSignIn = new OktaSignIn({
     clientId: "0oa1q7487qta05tTr1d8",
     authParams: {
       issuer: "https://jessica-prod.okta.com/oauth2/aus1q6fulfkVdysXm1d8"
-    }
+    },
+    logo: '/img/the-institute.jpeg',
   });
 
   oktaSignIn.authClient.token.getUserInfo().then(function(user) {
@@ -18,6 +19,8 @@ const oktaSignIn = new OktaSignIn({
       oktaSignIn.remove();
 
       const idToken = tokens.idToken;
+      document.getElementById("profileIconImage").setAttribute("src", "/img/woman-profile-lucas-andrade.jpg");
+      document.getElementById("profileIconImage").setAttribute("alt", "Woman Profile Image");
       document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.email + "! You just logged in! :)";
       document.getElementById("logout").style.display = 'block';
 
@@ -28,5 +31,4 @@ const oktaSignIn = new OktaSignIn({
 
   function logout() {
     oktaSignIn.authClient.signOut();
-    location.reload();
   }
