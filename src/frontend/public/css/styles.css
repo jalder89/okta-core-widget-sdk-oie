@@ -77,6 +77,10 @@ body {
     margin-left: 250px
 }
 
+#okta-sign-in {
+    z-index: 10;
+}
+
 #okta-sign-in > .okta-sign-in-header.auth-header {
     background-color: rgb(169, 35, 35) !important;
 }
